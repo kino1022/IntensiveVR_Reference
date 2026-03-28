@@ -20,8 +20,9 @@ public interface IDirectionLogic {
 実用においては以下のような実装がなされると考えられます。
 ```csharp
 [Serializable]  
-public class GoingEntityDirectionLogic : IPredictableDirectionLogic {  
-        [SerializeField]  
+public class GoingEntityDirectionLogic : IPredictableDirectionLogic { 
+ 
+    [SerializeField]  
     private Entity.Entity entity;  
   
     [SerializeField]  
@@ -30,10 +31,13 @@ public class GoingEntityDirectionLogic : IPredictableDirectionLogic {
     public Entity.Entity Entity {  
         get => entity;  
         set => entity = value;  
-    }    public GameObject Owner {  
+    }    
+    
+    public GameObject Owner {  
         get => owner;  
         set => owner = value;  
     }  
+    
     public Vector3 Direction => CalculateDirection().normalized;  
   
     public GoingEntityDirectionLogic() { }  
@@ -46,7 +50,7 @@ public class GoingEntityDirectionLogic : IPredictableDirectionLogic {
         if (entity is null) {  
             Debug.LogWarning($"{GetType().Name} : Entityがnullです");  
             return Vector3.zero;  
-        }        return (entity.transform.position - owner.transform.position).normalized;  
+        }        return (entity.transform.position -owner.transform.position).normalized;  
     }  
     public Vector3 Predict(float currentTime, float predictionTime) {  
         //別にEntityのVelocityをとってそこから予測したっていい  
