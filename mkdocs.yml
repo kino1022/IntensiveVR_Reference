@@ -8,12 +8,3 @@ theme:
   language: ja # UIを日本語化
   palette:
     scheme: slate # エンジニアに優しいダークモード（標準は default）
-
-# サイドバーのメニュー構成（docsフォルダの中身とリンクさせます）
-nav:
-  - ホーム: index.md
-  - クラス設計:
-    - PlayerController: 01_クラス設計/PlayerController.md
-    - WeaponManager: 01_クラス設計/WeaponManager.md
-  - コーディング規約:
-    - 命名規則: 02_コーディング規約/命名規則.md
