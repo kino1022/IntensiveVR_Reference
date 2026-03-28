@@ -13,8 +13,8 @@ theme:
 markdown_extensions:
   - toc:
       # 日本語の見出しをそのままアンカー（#概要 や #実装）として保持する設定
-      slugify: !!python/name:pymdownx.slugs.uslugify
+        slugify: !!python/name:pymdownx.slugs.uslugify
       - pymdownx.tilde      # ~~打ち消し線~~ を有効化
       - pymdownx.mark       # ==ハイライト== を有効化
       - pymdownx.tasklist:  # - [ ] チェックボックス を有効化
-      custom_checkbox: true
+        custom_checkbox: true
