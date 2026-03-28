@@ -9,12 +9,12 @@ theme:
   palette:
     scheme: slate # エンジニアに優しいダークモード（標準は default）
 
+
 # --- ここから下を追記 ---
 markdown_extensions:
   - toc:
-      # 日本語の見出しをそのままアンカー（#概要 や #実装）として保持する設定
-        slugify: !!python/name:pymdownx.slugs.uslugify
-      - pymdownx.tilde      # ~~打ち消し線~~ を有効化
-      - pymdownx.mark       # ==ハイライト== を有効化
-      - pymdownx.tasklist:  # - [ ] チェックボックス を有効化
-        custom_checkbox: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.tilde      # ~~打ち消し線~~ を有効化
+  - pymdownx.mark       # ==ハイライト== を有効化
+  - pymdownx.tasklist:  # - [ ] チェックボックス を有効化
+      custom_checkbox: true
