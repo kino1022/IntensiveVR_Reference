@@ -8,3 +8,9 @@ theme:
   language: ja # UIを日本語化
   palette:
     scheme: slate # エンジニアに優しいダークモード（標準は default）
+
+# --- ここから下を追記 ---
+markdown_extensions:
+  - toc:
+      # 日本語の見出しをそのままアンカー（#概要 や #実装）として保持する設定
+      slugify: !!python/name:pymdownx.slugs.uslugify
