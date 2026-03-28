@@ -30,4 +30,4 @@ namespace Movement.Interface {
 
 実装に際しては現在の時間と、予測したい時間を渡してPredictが呼ばれたならば、Tに当たる型の変数の状態を予測して返さなければなりません。
 
-また、Predictは頻繁に呼ばれることが予想されるため、内部でのGameObject型に対するNullチェックはよほどのことがない限りしないほうが良いです。（[[../02_TechnicalInfo/01_GameObject型やMonoBehaviourに対してのNull比較|01_GameObject型やMonoBehaviourに対してのNull比較]]を参照）
+また、Predictは頻繁に呼ばれることが予想されるため、内部でのGameObject型に対するNullチェックはよほどのことがない限りしないほうが良いです。（[[docs/02_TechnicalInfo/01_GameObject型やMonoBehaviourに対してのNull比較|01_GameObject型やMonoBehaviourに対してのNull比較]]を参照）
