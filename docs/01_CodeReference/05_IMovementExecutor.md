@@ -25,7 +25,7 @@ IVelocityManagerをリスト形式で管理して、管理下のIVelocityManager
 ### IReadOnlyList Velocities
 管理下にあるIVelocityManagerを外部に対して提供します。
 
-### bool EnabaleExecution
+### bool EnableExecution
 運動量の適用を行うかどうかを外部からコントロールするために公開される真偽値のプロパティです。
 falseの場合は運動量の適用を行わないように実装してください。
 
